@@ -15,18 +15,10 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="screen-stretch__wrapper">
+    <div class="screen-stretch-wrapper">
       <a class="main-header__logo" href="#">
-        <picture>
-          <source media="(min-width: 1400px)" width="70" height="60" type="image/svg+xml" srcset="images/logo-pic-desktop.svg">
-          <source media="(min-width: 768px)" width="50" height="60" type="image/svg+xml" srcset="images/logo-pic-tablet.svg">
-          <img class="logo-pic" src="images/logo-pic-mobile.svg" width="33" height="38" alt="Иконка логотипа Кэт Энерджи">
-        </picture>
-        <picture>
-          <source media="(min-width: 1400px)" width="118" height="20" type="image/svg+xml" srcset="images/logo-text-desktop.svg">
-          <source media="(min-width: 768px)" width="100" height="18" type="image/svg+xml" srcset="images/logo-text-tablet.svg">
-          <img class="logo-text" src="images/logo-text-mobile.svg" width="100" height="20" alt="Текстовое название логотипа Кэт Энерджи">
-        </picture>
+        <img class="main-header__logo-pic" src="/images/logo-pic.svg" width="33" height="38" alt="Иконка логотипа Кэт Энерджи">
+        <img class="main-header__logo-text logo-text" src="/images/logo-text.svg" width="100" height="18" alt="Текстовое название логотипа Кэт Энерджи">
       </a>
       <nav class="main-header__main-nav main-nav">
         <button class="main-nav__toggle" type="button">
@@ -35,19 +27,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list menu-list">
             <li class="menu-list__item menu-list__item--current">
-              <a href="#">
-                Главная
-              </a>
+              <a href="#">Главная</a>
             </li>
             <li class="menu-list__item">
-              <a href="catalog.html">
-                Каталог продукции
-              </a>
+              <a href="catalog.html">Каталог продукции</a>
             </li>
             <li class="menu-list__item">
-              <a href="#">
-                Подбор программы
-              </a>
+              <a href="programs.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -57,40 +43,34 @@
 
   <main class="main-container">
     <section class="nutrition-programs">
-      <div class="screen-stretch__wrapper">
+      <div class="screen-stretch-wrapper">
         <header class="nutrition-programs__header">
           <h1 class="nutrition-programs__title">Функциональное питание для котов</h1>
           <p class="nutrition-programs__description">Занялся собой? Займись котом!</p>
-
-          <picture>
-            <source media="(min-width: 1440px)" width="552" height="500" type="image/png" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" width="710" height="610" type="image/png" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
-            <img class="nutrition-programs__img" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка питания Кэт Энерджи с курицей">
-          </picture>
-
+          <img class="nutrition-programs__img" src="/images/index-main-img-mobile.png" width="280" height="270" alt="Упаковка питания Кэт Энерджи с курицей">
           <button class="nutrition-programs__button" type="button">Подобрать программу</button>
         </header>
       </div>
     </section>
 
     <section class="catalog-categories">
-      <div class="screen-stretch__wrapper">
+      <div class="screen-stretch-wrapper">
         <h2 class="visually-hidden">Категории каталога</h2>
         <div class="categories-card">
           <h3 class="categories-card__title">Похудение</h3>
           <p class="categories-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="categories-card__link" href="#">Каталог SLIM</a>
+          <a class="categories-card__link" href="catalog/slim.html">Каталог SLIM</a>
         </div>
         <div class="categories-card">
           <h3 class="categories-card__title">Набор массы</h3>
           <p class="categories-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="categories-card__link" href="#">Каталог PRO</a>
+          <a class="categories-card__link" href="catalog/pro.html">Каталог PRO</a>
         </div>
       </div>
     </section>
 
     <section class="method-application">
-      <div class="screen-stretch__wrapper">
+      <div class="screen-stretch-wrapper">
         <h2 class="method-application__title title-section">Как это работает</h2>
         <ol class="method-application__list">
           <li class="method-application__item method-application__item--step-one">
@@ -110,7 +90,7 @@
     </section>
 
     <section class="example">
-      <div class="screen-stretch__wrapper">
+      <div class="screen-stretch-wrapper">
         <h2 class="example__title title-section">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <dl class="example__statistics statistics">
@@ -142,22 +122,16 @@
     </section>
 
     <section class="main-contacts">
-      <div class="screen-stretch__wrapper">
+      <div class="screen-stretch-wrapper">
         <h3 class="main-contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
         <address class="main-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-
-        <picture>
-          <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-          <img class="main-contacts-map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта с указанием адреса офиса">
-        </picture>
-
+        <img src="images/map.png" width="320" height="362" alt="Карта с указанием адреса офиса">
       </div>
     </section>
   </main>
 
   <footer class="main-footer">
-    <div class="screen-stretch__wrapper">
+    <div class="screen-stretch-wrapper">
       <a class="main-footer__logo" href="#">
         <picture>
           <img class="logo-text" src="images/logo-text-mobile.svg" width="128" height="24" alt="Текстовое название логотипа Кэт Энерджи">
