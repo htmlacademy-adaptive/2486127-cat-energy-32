@@ -1,5 +1,10 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+.logo-pic:hover,
+.logo-text:hover,
+.logo-text:focus {
+  opacity: 70%;
+}
+
+.logo-pic:active,
+.logo-text:active {
+  opacity: 40%;
 }
