@@ -69,6 +69,98 @@
 }
 
 .example__slider {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  position: relative;
 }
+
+.example__slider-img--fat-cat {
+
+}
+
+.example__slider-img--thin-cat {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+// Вариант 1
+// <div class="con">
+// <img src="header.jpg" alt='" />
+// <img src="logo.png" alt='" class="top" />
+// </div>
+// css
+// .con {position:relative}
+// .top {position:absolute;top:0;left:0;}
+
+
+// Вариант 2
+// <div class="image-stack">
+// <div class="image-stack__item image-stack__item--top">
+//   <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/110238/texture-waves2.jpeg" alt="A portrait of a girl under hanging flowers.">
+// </div>
+// <div class="image-stack__item image-stack__item--bottom">
+//   <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/110238/portrait-1-cropped.jpg" alt="">
+// </div>
+// </div>
+
+// .image-stack {
+//     display: grid;
+//     grid-template-columns: repeat(12, 1fr);
+//     position: relative;
+//   }
+
+// для верхнего изображения
+//   .image-stack__item--top {
+//       grid-column: 1 / span 8;
+//       grid-row: 1; // must be on the same row as the other image
+//       padding-top: 20%; // this pushes the image down, and keeps it proportional as it resizes
+//       z-index: 1; // make this image render on top of the bottom
+//     }
+
+// для нижнего
+// .image-stack__item--bottom {
+//   grid-column: 4 / -1;
+//   grid-row: 1; // make this image be on the same row
+// }
+
+
+// Вариант 3
+// <div class="container">
+//   <img src="image1.jpg" class="image image1" />
+//   <img src="image2.jpg" class="image image2" />
+// </div>
+
+// .container {
+//   position: relative;
+// }
+
+// .image {
+//   width: 300px;
+//   height: 200px;
+// }
+
+// .image1 {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+// }
+
+// .image2 {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+// }
+
+
+// вариант 4
+// нижней картинке
+// display: block;
+// position: relative;
+// width: 90%; /* это не важно */
+
+// верхней картинке
+// display: block;
+// width: 30%; /* это наверное уже у тебя в js будет вычисляться */
+// position: absolute;
+// top: 22%; left: 40%; /* тоже через js будешь вычислять */

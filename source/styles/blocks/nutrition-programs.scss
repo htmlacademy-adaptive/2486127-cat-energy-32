@@ -1,11 +1,16 @@
+// .nutrition-programs {
+//   background-image: url("../images/index-background-mobile@2x.png");
+//   background-position: top;
+//   margin-bottom: 20px;
+// }
+
 .nutrition-programs__header {
   color: #ffffff;
   background-color: $bg-basic-green;
-  background-image: url("../images/hero-bg-mobile@1x.jpg");
-  background-position: top;
+  background-image: url("../images/index-background-mobile@2x.png");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 320px;
+  min-height: 302px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -18,12 +23,17 @@
     min-height: 690px;
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../images/index-background-pc@2x.png");
+  }
 }
 
 .nutrition-programs__title {
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
