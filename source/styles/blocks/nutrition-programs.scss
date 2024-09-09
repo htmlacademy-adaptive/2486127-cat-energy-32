@@ -1,27 +1,28 @@
 // .nutrition-programs {
-//   background-image: url("../images/index-background-mobile@2x.png");
-//   background-position: top;
-//   margin-bottom: 20px;
+//   background-image: ("../images/index-background-mobile@2x.png");
 // }
 
+// почему не работает картинка кота? как вообще шапку сделать
 .nutrition-programs__header {
-  color: #ffffff;
-  background-color: $bg-basic-green;
-  background-image: url("../images/index-background-mobile@2x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 302px;
   text-align: center;
+  color: #ffffff;
+
+  background-image:
+    linear-gradient(
+      rgba(104, 183, 56, 0.85) 65%,
+      rgba(255, 255, 255, 1) 65%,
+    ),
+    url("../images/index-background-mobile@2x.png");
+  // как задать прозрачность?
 
   @media (min-width: $tablet-width) {
-    color: #000000;
-    background-color: unset;
     background-image: unset;
     background-position: unset;
-    background-repeat: unset;
     background-size: unset;
-    min-height: 690px;
+    background-repeat: unset;
+    background-color: unset;
     text-align: left;
+    color: #000000;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,12 +34,15 @@
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
+  padding: 27px 20px 25px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     color: #000000;
+    padding: 65px 120px 40px;
+    max-width: 750px;
   }
 }
 
@@ -47,14 +51,28 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  padding: 0 20px 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
+    padding: 0 120px 50px;
+    max-width: 750px;
   }
 }
 
 .nutrition-programs__img {
   display: block;
+}
+
+.nutrition-programs__button {
+  width: 280px;
+  height: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 370px;
+    height: 120px;
+    margin-left: 120px;
+  }
 }
