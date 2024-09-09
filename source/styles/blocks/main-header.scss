@@ -15,6 +15,17 @@
   }
 }
 
+.main-header--on-content {
+  @media (min-width: $desktop-width) {
+    background-image:
+      linear-gradient(
+        rgba(104, 183, 56, 0.85) 50%,
+        rgba(255, 255, 255, 1) 50%,
+      ),
+      url("../images/index-background-pc@2x.png");
+  }
+}
+
 .main-header__wrapper {
   margin: 13px auto 15px;
 
