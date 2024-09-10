@@ -1,4 +1,20 @@
+.copyright {
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: unset;
+  }
+}
+
+.copyright__link {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #444444;
+}
+
 .copyright__logo {
-  background-image: url("../../icons/stack.svg#logo-academy");
+  mask-image: url("../../icons/stack.svg#logo-academy");
   background-size: 27px 34px;
 }
