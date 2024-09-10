@@ -1,8 +1,3 @@
-// .nutrition-programs {
-//   background-image: ("../images/index-background-mobile@2x.png");
-// }
-
-// почему не работает картинка кота? как вообще шапку сделать
 .nutrition-programs__header {
   text-align: center;
   color: #ffffff;
@@ -12,8 +7,9 @@
       rgba(104, 183, 56, 0.85) 65%,
       rgba(255, 255, 255, 1) 65%,
     ),
-    url("../images/index-background-mobile@2x.png");
-  // как задать прозрачность?
+    url("../../images/index-background-mobile@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     background-image: unset;
@@ -23,10 +19,6 @@
     background-color: unset;
     text-align: left;
     color: #000000;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../images/index-background-pc@2x.png");
   }
 }
 

@@ -50,4 +50,16 @@
     font-size: 16px;
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.main-contacts__street {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
 }

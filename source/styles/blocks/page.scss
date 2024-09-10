@@ -1,3 +1,24 @@
 .page__body {
   min-width: 320px;
+  position: relative;
+}
+
+.page__body--main-picture::before {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 100%;
+    background-image:
+      linear-gradient(90deg,
+      rgba(104, 183, 56, 0.85) 50%,
+      transparent 50%,
+    );
+  }
+}
+
+.page__body--main-picture::after {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 100%;
+    background-image: url("../images/index-background-pc@2x.png");
+  }
 }
