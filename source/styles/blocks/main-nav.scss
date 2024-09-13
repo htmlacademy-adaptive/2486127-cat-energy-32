@@ -24,13 +24,8 @@
     display: flex;
     align-items: center;
     justify-content: right;
-    max-width: 436px;
     gap: 33px;
     flex-wrap: wrap;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 475px;
   }
 }
 
@@ -43,10 +38,6 @@
     padding: unset;
     text-align: unset;
     border-top: unset;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
