@@ -23,6 +23,14 @@
   flex-direction: column;
   position: relative;
   height: 207px;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    min-height: 430px;
+    background-image: none;
+    border: 2px solid #d3d3d3;
+    margin-top: 70px;
+  }
 }
 
 .product-card--more::before {
@@ -34,6 +42,14 @@
   width: 2px;
   height: 30px;
   transform: translate(-50%, -50%) rotate(180deg);
+
+
+  @media (min-width: $tablet-width) {
+    top: 20%x;
+    left: 50%;
+    width: 2px;
+    height: 60px;
+  }
 }
 
 .product-card--more::after {
@@ -45,6 +61,13 @@
   width: 2px;
   height: 30px;
   transform: translate(-50%, -50%) rotate(90deg);
+
+  @media (min-width: $tablet-width) {
+    top: 20%x;
+    left: 50%;
+    width: 2px;
+    height: 60px;
+  }
 }
 
 .product-card__link {
@@ -71,6 +94,8 @@
   @media (min-width: $tablet-width) {
     padding: 22px 0 20px;
     min-width: 250px;
+    width: 170px;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,6 +107,23 @@
 .product-card__description--more {
   padding: unset;
   margin: 0;
+  padding-bottom: 21px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 82px;
+    font-size: 16px;
+    line-height: 18px;
+    width: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: unset;
+    margin: 0;
+    padding-bottom: 90px;
+  }
 }
 
 .product-card__title {
@@ -92,6 +134,7 @@
   margin: 0;
   padding-bottom: 14px;
   color: #222222;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -100,9 +143,19 @@
     padding: 22px 37px 20px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 12px 14px 23px;
-    text-align: center;
+  }
+}
+
+.product-card__title--more {
+  padding: 58px 0 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    padding: 160px 55px 23px;
   }
 }
 
@@ -129,4 +182,10 @@
   @media (min-width: $desktop-width) {
     width: 170px;
   }
+}
+
+.product-card__button--more {
+  width: 280px;
+  background-color: #f2f2f2;
+  color: #444444;
 }
