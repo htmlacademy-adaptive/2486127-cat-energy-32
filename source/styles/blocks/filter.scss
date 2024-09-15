@@ -1,9 +1,12 @@
-.filter__param {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.filter {
   color: #444444;
   font-size: 12px;
   line-height: 16px;
+}
+
+.filter__param {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 14px;
 
   @media (min-width: $tablet-width) {
@@ -22,3 +25,8 @@
   text-align: right;
   margin: 0;
 }
+
+.filter__value--additional-card {
+  margin-top: -15px;
+}
+
