@@ -181,6 +181,7 @@
 
   @media (min-width: $desktop-width) {
     width: 170px;
+    margin-top: auto;
   }
 }
 
@@ -188,4 +189,8 @@
   width: 280px;
   background-color: #f2f2f2;
   color: #444444;
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
 }

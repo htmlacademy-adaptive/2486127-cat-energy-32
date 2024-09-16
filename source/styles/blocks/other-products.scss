@@ -120,6 +120,11 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 300px;
+    margin-right: 40px;
+  }
 }
 
 .other-products__button {
@@ -128,7 +133,7 @@
   height: 40px;
 
   @media (min-width: $tablet-width) {
-    grid-row: 2/3;
+    grid-column: -1/1;
   }
 
   @media (min-width: $desktop-width) {
