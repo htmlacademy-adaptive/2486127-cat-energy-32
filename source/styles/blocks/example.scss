@@ -7,9 +7,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to bottom, #ffffff 30%, #eaeaea 30%);
+    background-image: linear-gradient(to bottom, #ffffff 30%, #f2f2f2 30%);
+    display: flex;
   }
 }
+
+// .example__text {
+//   @media (min-width: $desktop-width) {
+//     display: grid;
+//   }
+// }
 
 .example__title {
   margin: 0;
@@ -22,51 +29,36 @@
   color: #444444;
   margin: 0;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 440px;
+  }
 }
 
 .example__statistics {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   text-align: center;
   gap: 20px 32px;
-}
-
-.statistics__value {
-  padding: 14px 20px;
-  border: 1px solid #cdcdcd;
-  border-radius: 3px;
-}
-
-.statistics__parameter {
-  margin: 0;
-  text-transform: lowercase;
-  font-size: 12px;
-  line-height: 12px;
-  order: 1;
-  color: #444444;
-  margin-top: -8px;
-  background-color: #f2f2f2;
-  width: 80px;
 
   @media (min-width: $tablet-width) {
-    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: #f2f2f2;
+    justify-content: unset;
+    width: unset;
+    display: grid;
+    grid-template-columns: 168px 168px;
+    grid-template-rows: 1fr;
+    text-align: center;
+    gap: 20px 32px;
   }
 }
 
-.example__statistics-item--total {
-  grid-column: 1/-1;
-  display: flex;
-  justify-self: center;
-}
-
-.statistics__cost {
-  margin-left: 3px;
-}
 
 .example__slider {
   // display: grid;
@@ -74,17 +66,63 @@
   position: relative;
 }
 
-.example__slider-img--fat-cat {
+.example__slider-button {
+  width: 4px;
+  height: 100%;
+  padding: 0;
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  cursor: pointer;
 
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 2px solid #666666;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 18px;
+    mask-image: url("../../icons/slider-arrows.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: #666666;
+    translate: -50% -50%;
+  }
+}
+
+.example__slider-img--fat-cat {
+  clip-path: inset(0 50% 0 0);
 }
 
 .example__slider-img--thin-cat {
   position: absolute;
   top: 0;
   left: 0;
+  clip-path: inset(0 0 0 50%);
 }
 
-// Вариант 1
+
+// Вариант 1 как обрезать котов
 // <div class="con">
 // <img src="header.jpg" alt='" />
 // <img src="logo.png" alt='" class="top" />
@@ -164,3 +202,4 @@
 // width: 30%; /* это наверное уже у тебя в js будет вычисляться */
 // position: absolute;
 // top: 22%; left: 40%; /* тоже через js будешь вычислять */
+
