@@ -4,6 +4,14 @@
   }
 }
 
+
+.main-contacts iframe {
+  border: none;
+  display: block;
+  width: 100%;
+}
+
+
 .main-contacts__lead {
   display: grid;
   grid-template-columns: 1fr 1fr;
