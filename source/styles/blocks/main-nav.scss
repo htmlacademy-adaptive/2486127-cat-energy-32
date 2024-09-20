@@ -3,16 +3,16 @@
   width: 100%;
 }
 
+.main-nav__nav--pages a {
+  color: #000000;
+}
+
 .main-nav--closed {
   display: none;
 
   @media (min-width: $tablet-width) {
     display: unset;
   }
-}
-
-.main-header__nav--pages a {
-  color: #000000;
 }
 
 .main-nav__list {
@@ -83,7 +83,13 @@
     content: "";
   }
 
-  @media (min-width: $desktop-width) {
-    background-color: #ffffff;
+  // @media (min-width: $desktop-width) {
+  //   background-color: #ffffff;
+  // }
+}
+
+.main-nav__nav--pages .main-nav__link--current::after {
+  @media (min-width: $tablet-width) {
+    background-color: #68b738;
   }
 }

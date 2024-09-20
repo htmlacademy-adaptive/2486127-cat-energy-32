@@ -9,6 +9,15 @@
   line-height: 20px;
   text-decoration: none;
   color: #444444;
+  align-items: center;
+  padding-top: 20px;
+  width: 280px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
+
 
   &::after {
     content: "";

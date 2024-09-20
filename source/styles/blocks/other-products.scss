@@ -60,6 +60,10 @@
   padding: 0;
   margin: 0;
   padding-bottom: 19px;
+
+  @media (min-width: $desktop-width) {
+    width: 895px;
+  }
 }
 
 .other-products__card {
@@ -124,6 +128,8 @@
   @media (min-width: $desktop-width) {
     min-width: 300px;
     margin-right: 40px;
+    margin-left: auto;
+    justify-content: space-between;
   }
 }
 

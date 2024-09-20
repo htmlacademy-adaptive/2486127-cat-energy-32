@@ -18,11 +18,14 @@
   @media (min-width: $tablet-width) {
     flex-direction: column;
     text-align: right;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: unset;
     text-align: unset;
+    margin-left: unset;
+    justify-self: stretch;
   }
 }
 
