@@ -19,6 +19,7 @@
     flex-direction: column;
     text-align: right;
     margin-left: auto;
+    gap: 8px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,6 +38,12 @@
   padding: 14px 20px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    margin: -4px 0;
+  }
 }
 
 
@@ -52,6 +59,8 @@
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
+    width: unset;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,14 +68,24 @@
   }
 }
 
+.statistics__expenses {
+  @media (min-width: $tablet-width) {
+    padding-top: 6px;
+  }
+}
+
 .statistics__cost {
   margin-left: 3px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 6px;
+  }
 }
 
 .statistics__expenses,
 .statistics__cost {
   font-family: $secondary-font;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
 }

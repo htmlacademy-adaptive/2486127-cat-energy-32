@@ -7,10 +7,15 @@
     padding: 25px 30px 0;
     align-items: center;
   }
+
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px 40px;
+  }
 }
 
 .main-header__wrapper {
-  padding: 13px 20px 14px;
+  padding: 14px 20px 8px;
 
   @media (min-width: $tablet-width) {
     margin: unset;
@@ -27,17 +32,18 @@
   margin-left: 56px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 13px;
+    margin-left: 20px;
+    width: 53%;
   }
 }
 
-.main-header__logo:hover,
-.main-header__logo:focus {
+.main-header__logo--click:hover,
+.main-header__logo--click:focus {
   opacity: 70%;
 }
 
 
-.main-header__logo:active {
+.main-header__logo--click:active {
   opacity: 40%;
 }
 

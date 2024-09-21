@@ -39,17 +39,22 @@
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
-  padding: 27px 20px 25px;
+  padding: 27px 14px 12px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     color: #000000;
-    padding: 65px 90px 40px;
+    padding: 62px 90px 40px;
     max-width: 750px;
     order: -3;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 86px 40px;
+    max-width: 650px;
   }
 }
 
@@ -78,14 +83,17 @@
 
 .nutrition-programs__img {
   text-align: center;
+  display: block;
+  margin-top: -13px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -70px;
+    margin: auto;
+    margin-top: -85px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -350px;
-    margin-left: 260px;
+    margin-top: -370px;
+    margin-left: 450px;
   }
 }
 
@@ -101,6 +109,10 @@
     justify-self: left;
     margin-left: 90px;
     min-height: 54px;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 80px;
+    }
 
     // чтобы текст кнопки был по середине 1 и 2 варианты, сделала на общий button
     // display: flex;
