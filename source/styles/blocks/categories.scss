@@ -25,9 +25,10 @@
   @media (min-width: $desktop-width) {
     min-width: 570px;
     min-height: 374px;
-    padding: 77px 52px 59px;
     width: 570px;
     margin: 0;
+    margin-top: 18px;
+    padding: 35px 52px 18px;
   }
 }
 
@@ -135,10 +136,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 214px;
-    padding-bottom: 73px;
     max-width: unset;
     margin-right: 52px;
+    padding-bottom: 72px;
+    padding-left: 160px;
+    padding-top: 40px;
   }
 }
 

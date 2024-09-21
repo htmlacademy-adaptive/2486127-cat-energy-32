@@ -24,6 +24,10 @@
     padding-left: 20px;
     padding-top: 2px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .social__item {
