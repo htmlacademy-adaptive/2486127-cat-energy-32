@@ -1,9 +1,35 @@
 .main-footer {
   background-color: #f2f2f2;
   display: flex;
+  padding: 38px 20px;
+
   flex-direction: column;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    justify-content: space-between;
+    padding: 56px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 110px;
+  }
 }
+
+.main-footer__logo {
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: unset;
+    width: 100%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.main-footer__logo-text {
+  display: block;
 }

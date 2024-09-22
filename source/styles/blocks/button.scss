@@ -6,4 +6,25 @@
   text-transform: uppercase;
   font-family: $secondary-font;
   text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }

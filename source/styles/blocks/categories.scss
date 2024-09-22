@@ -7,25 +7,28 @@
     display: flex;
     flex-direction: row;
     gap: 80px;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 
 .categories__card {
   background-color: #f2f2f2;
   position: relative;
-  padding: 30px 20px 22px;
+  padding: 30px 20px 18px;
   margin: 20px 0;
 
   @media (min-width: $tablet-width) {
     padding: 77px 53px 53px;
-    margin: 30px 0;
+    margin: 0 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 570px;
     min-height: 374px;
-    padding: 77px 52px 59px;
+    width: 570px;
+    margin: 0;
+    margin-top: 18px;
+    padding: 35px 52px 18px;
   }
 }
 
@@ -44,6 +47,7 @@
     height: 200px;
     top: 92px;
     right: 63px;
+    left: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,6 +76,7 @@
     height: 194px;
     top: 81px;
     right: 93px;
+    left: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -101,6 +106,7 @@
     height: 112px;
     top: 135px;
     right: 29px;
+    left: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -118,21 +124,23 @@
   line-height: 37px;
   text-transform: uppercase;
   margin: 0;
-  padding-left: 90px;
+  padding-left: 70px;
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     padding-left: unset;
-    padding-bottom: 24px;
+    padding-bottom: 26px;
     max-width: 340px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 214px;
-    padding-bottom: 73px;
     max-width: unset;
+    margin-right: 52px;
+    padding-bottom: 72px;
+    padding-left: 160px;
+    padding-top: 40px;
   }
 }
 
@@ -144,7 +152,7 @@
   margin: 0;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -152,12 +160,15 @@
     color: #000000;
     padding-bottom: 48px;
     border-bottom: unset;
-    max-width: 340px;
+    min-width: 340px;
+    padding-right: 260px;
+    margin-bottom: 6px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 23px;
     max-width: unset;
+    padding-right: unset;
   }
 }
 
@@ -173,6 +184,10 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.categories__card-link--click:active {
+  opacity: 30%;
 }
 
 .categories__card-link::after {

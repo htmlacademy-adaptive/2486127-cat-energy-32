@@ -1,6 +1,23 @@
 .catalog__title {
   font-family: $secondary-font;
   font-size: 36px;
-  line-height: 30px;
-  text-transform: uppercase;
+  line-height: 36px;
+  margin: 0;
+  padding: 27px 0 41px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    padding: 62px 0 96px;
+    border-top: unset;
+    border-bottom: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 22px 0;
+    margin-bottom: 80px;
+  }
 }
