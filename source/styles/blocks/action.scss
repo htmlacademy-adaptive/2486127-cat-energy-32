@@ -22,6 +22,13 @@
     margin-top: 52px;
     padding: 58px 79px 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+    min-height: 288px;
+    margin-top: 0;
+    padding: 58px 79px 20px;
+  }
 }
 
 
@@ -63,5 +70,12 @@
     width: 170px;
     text-align: left;
     margin-top: 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 180px;
+    text-align: center;
+    margin: 0;
+    padding-top: 45px;
   }
 }
