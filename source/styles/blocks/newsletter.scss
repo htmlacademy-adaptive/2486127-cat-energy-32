@@ -4,11 +4,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin: 80px 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin: 96px 0 104px;
+    margin: 96px 0 82px;
   }
 }
 
@@ -35,8 +31,9 @@
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
-    margin: 74px 0 80px;
     margin-left: 110px;
+
+    margin: -18px 0 74px 40px;
 
     // &::before {
     //   content: "";
@@ -75,6 +72,8 @@
     box-shadow:
       50vw 0 0 $bg-basic-green,
       -50vw 0 0 $bg-basic-green;
+
+    top: 7%;
   }
 }
 
@@ -86,6 +85,7 @@
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 32px;
+    padding: 0 30px;
   }
 }
 
@@ -99,7 +99,8 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     gap: 0;
-    margin: 0 68px;
+    margin: 0 38px;
+    height: 54px;
   }
 }
 
@@ -113,6 +114,11 @@
   padding: 13px;
   text-transform: uppercase;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: unset;
+    min-width: 376px;
+  }
 }
 
 .newsletter__form-subscribe--click:user-invalid {

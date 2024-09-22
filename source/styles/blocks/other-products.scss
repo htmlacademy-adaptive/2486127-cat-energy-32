@@ -2,6 +2,12 @@
   position: relative;
 }
 
+.other-products-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-top: 44px;
+  }
+}
+
 .other-products__title {
   font-family: $secondary-font;
   font-size: 24px;
@@ -27,8 +33,7 @@
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
-    margin: 74px 0 80px;
-    margin-left: 110px;
+    margin: 47px 0 0 40px;
 
     // &::before {
     //   content: "";
@@ -103,7 +108,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
-    padding: 26px 38px;
+    padding: 11px 38px 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -142,6 +147,12 @@
   line-height: 16px;
   margin: 0;
   padding-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: unset;
+  }
 }
 
 .other-products__card-param {

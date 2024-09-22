@@ -14,7 +14,7 @@
     border-bottom: unset;
     padding-top: unset;
     padding-bottom: unset;
-    background-image: linear-gradient(#ffffff 15%, #eaeaea 15%);
+    background-image: linear-gradient(#ffffff 14%, #eaeaea 14%);
   }
 }
 
@@ -83,7 +83,7 @@
   align-content: center;
 
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     height: 206px;
   }
 
@@ -98,14 +98,12 @@
 
 .product-card__description {
   @media (min-width: $tablet-width) {
-    padding: 22px 0 20px;
     min-width: 250px;
     width: 170px;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    padding: unset;
     min-width: 170px;
     width: unset;
     margin-bottom: 32px;
@@ -120,10 +118,11 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 82px;
+    padding-bottom: 52px;
     font-size: 16px;
     line-height: 18px;
     width: 160px;
+    min-width: 222px;
   }
 
   @media (min-width: $desktop-width) {
@@ -146,7 +145,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    padding: 22px 37px 20px;
+    padding: 22px 17px 20px;
     margin: auto;
     text-align: center;
   }
@@ -165,7 +164,7 @@
     font-size: 20px;
     line-height: 24px;
     margin: 0;
-    padding: 160px 0 23px;
+    padding: 160px 40px 23px;
   }
 }
 
@@ -180,7 +179,9 @@
   text-align: center;
   align-self: center;
   color: #ffffff;
-  margin-top: 21px;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     grid-column: unset;
@@ -199,6 +200,10 @@
   width: 280px;
   background-color: #f2f2f2;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 170px;
