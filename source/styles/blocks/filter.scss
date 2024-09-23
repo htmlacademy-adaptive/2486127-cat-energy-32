@@ -1,0 +1,27 @@
+.filter {
+  color: #444444;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.filter__param {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    color: #444444;
+    font-size: 16px;
+    line-height: 20px;
+    gap: 10px;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 5px;
+  }
+}
+
+.filter__value {
+  text-align: right;
+  margin: 0;
+}

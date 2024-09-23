@@ -1,0 +1,16 @@
+.screen-stretch-wrapper {
+  min-width: 320px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0 110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

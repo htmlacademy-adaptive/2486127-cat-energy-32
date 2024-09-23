@@ -1,0 +1,45 @@
+.copyright {
+  align-self: center;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: unset;
+  }
+}
+
+.copyright__link {
+  display: flex;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #444444;
+  align-items: center;
+  padding-top: 20px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    padding-top: unset;
+    padding-left: 5px;
+  }
+
+  &::after {
+    content: "";
+    mask-image: url("../../icons/stack.svg#logo-academy");
+    width: 27px;
+    height: 34px;
+    display: block;
+    background-color: #666666;
+    margin-left: 23px;
+  }
+}
+
+.copyright__link:hover::after {
+  background-color: #68b738;
+}
+
+
+.copyright__logo {
+  background-size: 27px 34px;
+}
