@@ -44,6 +44,3 @@
   background: #444444;
   mask-image: url("../icons/stack.svg#search");
 }
-
-тест публикации
-```

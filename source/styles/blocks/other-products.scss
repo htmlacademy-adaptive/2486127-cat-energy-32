@@ -80,14 +80,6 @@
   }
 }
 
-.other-products-wrapper {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 245px;
-    gap: 80px;
-  }
-}
-
 .other-products__list {
   padding: 0;
   margin: 0;
