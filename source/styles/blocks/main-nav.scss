@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-.main-nav__nav--pages a {
+.main-nav--pages a {
   color: #000000;
 }
 
@@ -88,7 +88,7 @@
   // }
 }
 
-.main-nav__nav--pages .main-nav__link--current::after {
+.main-nav--pages .main-nav__link--current::after {
   @media (min-width: $tablet-width) {
     background-color: #68b738;
   }

@@ -6,6 +6,12 @@
   @media (min-width: $tablet-width) {
     padding-top: 44px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    gap: 80px;
+  }
 }
 
 .other-products__title {
@@ -71,15 +77,6 @@
     box-shadow:
       50vw 0 0 $bg-basic-green,
       -50vw 0 0 $bg-basic-green;
-  }
-}
-
-
-.other-products-wrapper {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 245px;
-    gap: 80px;
   }
 }
 
