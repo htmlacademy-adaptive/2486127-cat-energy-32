@@ -1,10 +1,10 @@
-.statistics-item {
+.statistics__item {
   @media (min-width: $tablet-width) {
     min-width: 162px;
   }
 }
 
-.statistics-item--total {
+.statistics__item--total {
   grid-column: 1/-1;
   display: flex;
   justify-self: center;
@@ -43,7 +43,6 @@
   }
 }
 
-
 .statistics__parameter {
   text-transform: lowercase;
   font-size: 12px;
@@ -51,21 +50,22 @@
   order: 1;
   color: #444444;
   background-color: #f2f2f2;
-  width: fit-content;
-  margin: unset;
+  width: 100px;
+  margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
+  margin-top: -8px;
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
-    width: unset;
-    margin: 0;
+    width: fit-content;
+    margin: auto;
+    margin-top: -5px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: #f2f2f2;
-    width: fit-content;
-    margin: auto;
+    margin-top: -4px;
   }
 }
 
