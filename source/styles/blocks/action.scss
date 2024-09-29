@@ -4,10 +4,10 @@
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     image-set(
-      url("../../images/action-image-mobile@1x.webp") type("image/webp") 1x,
       url("../../images/action-image-mobile@2x.webp") type("image/webp") 2x,
-      url("../../images/action-image-mobile@1x.jpg") type("image/jpeg") 1x,
-      url("../../images/action-image-mobile@2x.jpg") type("image/jpeg") 2x
+      url("../../images/action-image-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/action-image-mobile@2x.jpg") type("image/jpeg") 2x,
+      url("../../images/action-image-mobile@1x.jpg") type("image/jpeg") 1x
     );
   background-size: cover;
   background-repeat: no-repeat;
@@ -67,15 +67,16 @@
 
 
   @media (min-width: $tablet-width) {
-    width: 170px;
+    width: 205px;
     text-align: left;
-    margin-top: 12px;
+    margin: 0;
+    padding-right: 50px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 180px;
     text-align: center;
-    margin: 0;
+    padding-right: unset;
     padding-top: 45px;
   }
 }

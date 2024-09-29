@@ -3,12 +3,12 @@
   padding: 25px 0 40px;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to bottom, #ffffff 62%, #eaeaea 62%);
+    background-image: linear-gradient(to bottom, #ffffff 600px, #eaeaea 600px);
     padding: 25px 0 50px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to bottom, #ffffff 20%, #f2f2f2 20%);
+    background-image: linear-gradient(to bottom, #ffffff 110px, #f2f2f2 110px);
     padding: 25px 0 10px;
   }
 }
@@ -17,6 +17,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
   }
 }
 
@@ -108,6 +109,10 @@
   transform: translate(-50%, -50%);
   display: block;
   cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    height: 512px;
+  }
 
   &::before {
     content: "";
