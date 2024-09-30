@@ -20,10 +20,6 @@
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(#ffffff 12%, #f2f2f2 12%);
   }
-
-  @media (min-width: $desktop-width) {
-    background-image: linear-gradient(#ffffff 12%, #f2f2f2 12%);
-  }
 }
 
 .product-card--more {
@@ -41,7 +37,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 66px;
+    margin-top: 58px;
   }
 }
 
